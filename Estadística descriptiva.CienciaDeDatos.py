@@ -22,18 +22,13 @@ def mediana(valores):
     """
     Calcula la mediana de una lista de números
     Detecta y elimina valores NaN
-    
-    Paràmetros
-    ----------
-    vals: lista
-        lista con los numeros
+    -----------------------------------------------
+    Recibe:
+    valoress: Lista con los números
         
-    Retorna
-    -------
-    mediana:float
-        la mediana de los numeros (excluyendo NaNs)
+    Retorna:
+    mediana: Float con la mediana de los números (excluyendo NaNs)
     """
-    
     
     #eliminamos los valores que sean NaNs
     valoresFinal=[]
@@ -53,16 +48,13 @@ def mediana(valores):
 
 def moda(valores):
     """
-    calcula la moda de una lista conteniendo una
-    variable categoriva nominal
-    Parametros
-    -----------
-    vals: list
-    lista de categotias
-    Retorna
-    -------
-    moda: str
-    la moda de la muestra
+    Calcula la moda de una lista 
+    ----------------------------------
+    Recibe:
+    valoress: Lista de categotias
+    
+    Retorna:
+    moda: str con la moda de la muestra
     """
     #encontrar el conjunto de elementos unicos
     categorias=[]
@@ -99,20 +91,15 @@ def moda(valores):
 
 def rango(valores):
     """
-    Calcula el rango de una lista de numeros
+    Calcula el rango de una lista de números
     Detecta y elimina valores NaN
+    ------------------------------------------
+    Recibe:
+    valores: Lista con los números
     
-    Paràmetros
-    ----------
-    vals: lista
-        lista con los numeros
-        
-    Retorna
-    -------
-    rango:float
-        rango de los numeros (excluyendo NaNs)
+    Retorna:
+    rango: Float con el rango de los números (excluyendo NaNs)
     """
-    
     
     #eliminamos los valores que sean NaNs
     valoresFinal=[]
@@ -124,20 +111,15 @@ def rango(valores):
 
 def varianza(valores):
     """
-    Calcula la varianza de una lista de numeros
+    Calcula la varianza de una lista de números
     Detecta y elimina valores NaN
-    
-    Paràmetros
-    ----------
-    vals: lista
-        lista con los numeros
+    ----------------------------------------------
+    Recibe:
+    valores: Lista con los números
         
-    Retorna
-    -------
-    varianza:float
-        varianza de los numeros (excluyendo NaNs)
+    Retorna:
+    varianza: Float con la varianza de los números (excluyendo NaNs)
     """
-    
     
     #eliminamos los valores que sean NaNs
     valoresFinal=[]
@@ -157,20 +139,15 @@ def varianza(valores):
 
 def desviacionEstandar(valores):
     """
-    Calcula la desviacion estandar de una lista de numeros
+    Calcula la desviacion estandar de una lista de números
     Detecta y elimina valores NaN
-    
-    Paràmetros
-    ----------
-    vals: lista
-        lista con los numeros
+    ---------------------------------------------------------
+    Recibe:
+    valoress: Lista con los números
         
-    Retorna
-    -------
-    desviacion estandar:float
-        desviacion estandar de los numeros (excluyendo NaNs)
+    Retorna:
+    desviacion estandar: Float con la desviacion estandar de los números (excluyendo NaNs)
     """
-    
     
     #eliminamos los valores que sean NaNs
     valoresFinal=[]
@@ -192,11 +169,10 @@ def percentil(valores,q,interpolacion="lineal"):
     """
     Calcula el percentil de una lista de numeros
     Detecta y elimina valores NaN
-    
-    Paràmetros
-    ----------
-    vals: lista
-        lista con los numeros
+    -------------------------------------------------
+    Recibe:
+    valores: Lista con los numeros
+    q: 
         
     Retorna
     -------
@@ -219,7 +195,7 @@ def percentil(valores,q,interpolacion="lineal"):
         #a ki kargi del eje de indices
         distancia=len(valoresFinal)-1
 
-        #calcular el indice efectio del percentil
+        #calcular el indice efectivo del percentil
         indiceEfectivo=distancia*q/100
         
         #parte fraccional
