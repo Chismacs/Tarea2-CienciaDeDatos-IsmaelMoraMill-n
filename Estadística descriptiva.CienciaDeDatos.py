@@ -172,7 +172,7 @@ def percentil(valores,q,interpolacion="lineal"):
     -------------------------------------------------
     Recibe:
     valores: Lista con los números
-    q: 
+    q: Int con el percentil que se desea 
     interpolacion: string con la cadena "lineal"
         
     Retorna
