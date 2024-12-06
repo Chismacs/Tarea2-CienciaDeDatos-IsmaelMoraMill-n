@@ -167,19 +167,17 @@ def desviacionEstandar(valores):
 
 def percentil(valores,q,interpolacion="lineal"):
     """
-    Calcula el percentil de una lista de numeros
+    Calcula el percentil de una lista de números
     Detecta y elimina valores NaN
     -------------------------------------------------
     Recibe:
-    valores: Lista con los numeros
+    valores: Lista con los números
     q: 
+    interpolacion: string con la cadena "lineal"
         
     Retorna
-    -------
-    percentil:float
-        percentil de los numeros (excluyendo NaNs)
+    percentil: Float con el percentil de los números (excluyendo NaNs)
     """
-    
     
     #eliminamos los valores que sean NaNs
     valoresFinal=[]
@@ -214,20 +212,15 @@ def percentil(valores,q,interpolacion="lineal"):
     
 def rangoIntercuartilico(valores):
     """
-    Calcula el rango intercuartilico de una lista de numeros
+    Calcula el rango intercuartilico de una lista de números
     Detecta y elimina valores NaN
-    
-    Paràmetros
-    ----------
-    vals: lista
-        lista con los numeros
+    -----------------------------------------------------------
+    Recibe:
+    valores: Lista con los números
         
-    Retorna
-    -------
-    rango intercuartilico:float
-        rango intercuartilico de los numeros (excluyendo NaNs)
+    Retorna:
+    rango intercuartilico: Float con el rango intercuartilico de los números (excluyendo NaNs)
     """
-    
     
     #eliminamos los valores que sean NaNs
     valoresFinal=[]
@@ -240,20 +233,15 @@ def rangoIntercuartilico(valores):
     
 def mad(valores):
     """
-    Calcula el MAD de una lista de numeros
+    Calcula el MAD de una lista de números
     Detecta y elimina valores NaN
-    
-    Paràmetros
-    ----------
-    vals: lista
-        lista con los numeros
+    ----------------------------------------
+    Recibe:
+    valores: Lista con los numeros
         
-    Retorna
-    -------
-    MAD:float
-        MAD de los numeros (excluyendo NaNs)
+    Retorna:
+    MAD: Float con el MAD de los numeros (excluyendo NaNs)
     """
-    
     
     #eliminamos los valores que sean NaNs
     valoresFinal=[]
@@ -272,22 +260,18 @@ def mad(valores):
 
 def covarianza(valoresX,valoresY):
     """
-    Calcula la covarianza de una lista de numeros
+    Calcula la covarianza de una lista de números
     Detecta y elimina valores NaN
-    
-    Paràmetros
-    ----------
-    vals: lista
-        lista con los numeros
+    -----------------------------------------------
+    Recibe:
+    valoresX: Lista con los números correspondientes a la coordenada x del par ordenado
+    valoresY: Lista con los números correspondientes a la coordenada y del par ordenado
         
-    Retorna
-    -------
-    covarianza:float
-        covarianza de los numeros (excluyendo NaNs)
+    Retorna:
+    covarianza: Float con la covarianza de los números (excluyendo NaNs)
     """
     
-    
-      #eliminamos los valores que sean NaNs
+    #eliminamos los valores que sean NaNs
     x=[]
     y=[]
     
@@ -310,18 +294,15 @@ def covarianza(valoresX,valoresY):
 
 def correlacion(valoresX,valoresY):
     """
-    Calcula la coeficiente de correlacion de una lista de numeros
+    Calcula la coeficiente de correlación de una lista de números
     Detecta y elimina valores NaN
-    
-    Paràmetros
-    ----------
-    vals: lista
-        lista con los numeros
+    ---------------------------------------------------------------
+    Recibe:
+    valoresX: Lista con los números correspondientes a la coordenada x del par ordenado
+    valoresY: Lista con los números correspondientes a la coordenada y del par ordenado
         
-    Retorna
-    -------
-    correlacion:float
-        correlacion de los numeros (excluyendo NaNs)
+    Retorna:
+    correlacion: Float con la correlacion de los números (excluyendo NaNs)
     """  
     #eliminamos los valores que sean NaNs
     x=[]
