@@ -244,9 +244,9 @@ def mad(valores):
     
     #eliminamos los valores que sean NaNs
     valoresFinal=[]
-    for i in valores:
-        if math.isfinite(i):
-            valoresFinal.append(i)
+    for v in valores:
+        if math.isfinite(v):
+            valoresFinal.append(v)
     #calculamos la mediana de los datos orginales
     mediana1=mediana(valoresFinal)
     #creamos una lista vacia para ingresar cada dato restado con la mediana1 y su valor absoluto
