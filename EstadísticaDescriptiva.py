@@ -312,5 +312,5 @@ def correlacion(valoresX,valoresY):
             x.append(valoresX[i])
             y.append(valoresY[i])
 
-    rxy=covarianza(x,y)/(varianza(x)*varianza(y))
+    rxy=covarianza(x,y)/(desviacionEstandar(x)*desviacionEstandar(y))
     return rxy
