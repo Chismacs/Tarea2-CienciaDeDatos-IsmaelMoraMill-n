@@ -199,12 +199,12 @@ def percentil(valores,q,interpolacion="lineal"):
         parteDecimalIndice=indiceEfectivo-int(indiceEfectivo)
         
         #indice inferior
-        i=int((indiceEfectivo)//1)
-        j=i+1
+        i=int(indiceEfectivo)
+        j=min(i+1,len(valoresFinal)-1)
 
         #La interoplacion lineal se implementa con
         # val_inf + (val_sup)- val_inf)*fraction,
-        percentiles=valoresFinal[i]+valoresFinal[j]-valoresFinal[i]*parteDecimalIndice
+        percentiles=valoresFinal[i]+(valoresFinal[j]-valoresFinal[i])*parteDecimalIndice
         return percentiles
         
         percentiles=valoresFinal
