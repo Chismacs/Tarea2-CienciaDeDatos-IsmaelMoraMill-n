@@ -189,12 +189,11 @@ def percentil(valores,q,interpolacion="lineal"):
     valoresFinal.sort()
 
     if interpolacion=="lineal":
-        #Distancia entre el primer y ultimo elemtno,
-        #a ki kargi del eje de indices
+        #Distancia entre el primer y ultimo elemento
         distancia=len(valoresFinal)-1
 
         #calcular el indice efectivo del percentil
-        indiceEfectivo=distancia*q/100
+        indiceEfectivo=(distancia)*(q/100)
         
         #parte fraccional
         parteDecimalIndice=indiceEfectivo-int(indiceEfectivo)
