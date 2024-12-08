@@ -307,10 +307,10 @@ def correlacion(valoresX,valoresY):
     x=[]
     y=[]
     
-    for i in range(len(valoresX)):
-        if math.isfinite(valoresX[i]) & math.isfinite(valoresY[i]): 
-            x.append(valoresX[i])
-            y.append(valoresY[i])
+    for i,j in zip(valoresX,valoresY):
+        if math.isfinite(i) & math.isfinite(j): 
+            x.append(i)
+            y.append(j)
 
     rxy=covarianza(x,y)/(desviacionEstandar(x)*desviacionEstandar(y))
     return rxy
