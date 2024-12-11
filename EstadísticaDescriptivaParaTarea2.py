@@ -91,7 +91,7 @@ def moda(valores):
     moda=[]
     for i in range(len(cuentas)):
         if cuentas[i]==valoresMax:
-            modas.append(categorias[i])
+            moda.append(categorias[i])
   
     #retorno la moda
     #moda= categorias[i_max]
