@@ -39,7 +39,7 @@ def mediana(valsIn):
     valores=[]
     for v in valsIn:
         if math.isfinite(v):
-            vals.append(v)
+            valores.append(v)
     
     #ordenar la lista
     valores.sort()
