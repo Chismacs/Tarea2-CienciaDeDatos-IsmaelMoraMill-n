@@ -175,7 +175,7 @@ def desviacionEstandar(valsIn):
     
     #Estimamos las desviaciones cuadraticas medias
     dcm=[]
-    for i in vals:
+    for i in valores:
         dcm.append((i-promVal)**2)
     varianza=sum(dcm)/len(valores)
     
@@ -318,7 +318,7 @@ def correlacion(x, y):
             valoresY.append(yi)
     
     covarianzaXY = covarianza(valoresX, valoresY)
-    stdX = desviacion_estandar(valoresX)
-    stdY = desviacion_estandar(valoresY)
+    stdX = desviacionEstandar(valoresX)
+    stdY = desviacionEstandar(valoresY)
     
     return covarianzaXY / (stdX * stdY)
