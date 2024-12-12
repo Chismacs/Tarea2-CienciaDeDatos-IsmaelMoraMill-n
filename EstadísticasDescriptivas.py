@@ -18,10 +18,6 @@ def promedio(lista):
     promedio=sum(valores)/len(valores)
     return promedio
 
-
-
-
-
 def mediana(valsIn):
     """
     Calcula la mediana de una lista de números
@@ -50,9 +46,6 @@ def mediana(valsIn):
         k=len(valores)//2
         mediana=(valores[k-1]+valores[k])/2
     return mediana
-
-
-
 
 def moda(valores):
     """
@@ -97,8 +90,6 @@ def moda(valores):
     #moda= categorias[i_max]
     return moda
 
-
-
 def rango(valsIn):
     """
     Calcula el rango de una lista de números
@@ -119,7 +110,6 @@ def rango(valsIn):
             valores.append(v)
 
     return max(valores)-min(valores)
-
 
 def varianza(valsIn):
     """
@@ -151,7 +141,6 @@ def varianza(valsIn):
     
     return varianza
 
-
 def desviacionEstandar(valsIn):
     """
     Calcula la desviacion estandar de una lista de números
@@ -180,7 +169,6 @@ def desviacionEstandar(valsIn):
     varianza=sum(dcm)/len(valores)
     
     return varianza**(1/2)
-
 
 def percentil(valsIn,q,interpolacion="lineal"):
     """
@@ -236,6 +224,7 @@ def rangoIntercuartilico(valsIn):
             valores.append(v)
     rangoIntercuartilico=percentil(valores,75)-percentil(valores,25)
     return rangoIntercuartilico
+    
 def mad(valsIn):
     """
     Calcula el MAD de una lista de números
